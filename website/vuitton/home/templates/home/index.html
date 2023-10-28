@@ -1,0 +1,89 @@
+{% extends 'home/layout.html' %}
+{% load static %}
+
+{% block content %}
+
+    <!-- Current catalogues -->
+
+    <section class="videobg" id="video1">
+        <!-- <video src="assets/Hero Pages/v1.mp4" type="video/mp4" autoplay loop muted plays-inline class="video" ></video> -->
+        <img src="{% static 'home/assets/Hero Pages/i2.webp' %}" alt="Background Image" class="video">
+        <h2>Luious Vuitton Deep Time</h2>
+        <button>Discover the Collections</button>
+    </section>
+      
+    <section class="videobg" id="video2">
+        <video src="{% static 'home/assets/Hero Pages/v2.mp4' %}" type="video/mp4" autoplay loop muted plays-inline class="video" ></video>
+        <h2>Zendaya and the Capucines</h2>
+        <button>Discover the Collections</button>
+    </section>
+      
+    <section class="videobg" id="video3">
+        <video src="{% static 'home/assets/Hero Pages/v3.mp4' %}" type="video/mp4" autoplay loop muted plays-inline class="video" ></video>
+        <h2>LV By The Pool</h2>
+        <button>Discover the Collections</button>
+    </section>
+      
+    <section class="imagebg" id="image1">
+        <h2 id="h2-1-imagebg">Taurillon Monogram and
+            <br> Monogram Macassar
+        </h2>
+        <!-- <h2 id="h2-2-imagebg">Monogram Macassar</h2> -->
+        <button>Discover the Collections</button>
+    </section>
+
+    <section class="videobg" id="video4">
+        <video src="{% static 'home/assets/Hero Pages/v5.mp4' %}" type="video/mp4" autoplay loop muted plays-inline class="video" ></video>
+        <h2>Tambour</h2>
+        <button>Discover the Collections</button>
+    </section>
+
+    <section class="videobg" id="video5">
+        <video src="{% static 'home/assets/Hero Pages/v6.mp4' %}" type="video/mp4" autoplay loop muted plays-inline class="video" ></video>
+        <h2>Men's Fall-Winter 2023</h2>
+        <button>Discover the Collections</button>
+    </section>
+
+    <section class="services">
+        <h2>Services</h2>
+        <div class="grid">
+            <div class="grid-item">
+                <div class="card">
+                    <img class="card-image" src="{% static 'home/assets/Service Pages/Service_image1.jpg' %}" alt="service img 1">
+                    <div class="card-content">
+                        <h1>How can we help you?</h1>
+                        <p>Wherever you are, Louis Vuitton Client Advisors will be delighted to assist you.</p>
+                        <button class="card-btn">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <div class="card">
+                    <img class="card-image" src="{% static 'home/assets/Service Pages/Service_image2.jpg' %}" alt="service img 2">
+                    <div class="card-content">
+                        <h1>Art of Gifting</h1>
+                        <p>Choose the perfect gift from our specially curated selection of products.</p>
+                        <button class="card-btn">Gifts for Her</button>
+                        <button class="card-btn">Gifts for Him</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <div class="card">
+                    <img class="card-image" src="{% static 'home/assets/Service Pages/Service_image3.jpg' %}" alt="service img 3">
+                    <div class="card-content">
+                        <h1>Personalization</h1>
+                        <p>Louis Vuitton's personalization offer spans a wide range of services.</p>
+                        <button class="card-btn">Explore our Collections</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+    </section>
+    
+{% endblock %}
