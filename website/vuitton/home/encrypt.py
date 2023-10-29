@@ -64,9 +64,9 @@ productInformation = productInformation = """{
         "warranty_provider": "Sample Warranty Services"
     }
 }"""
- # The message to encrypt and decrypt
-encrypted_message = encrypt(serializedToken, productInformation) # The encrypted message
-# print(encrypted_message) # Print the output
-decrypted_message = decrypt(serializedToken, encrypted_message) # The decrypted message
-print("decrypted_message:") # Print the output
-print(decrypted_message) # Print the output
+#  # The message to encrypt and decrypt
+# encrypted_message = encrypt(serializedToken, productInformation) # The encrypted message
+# # print(encrypted_message) # Print the output
+# decrypted_message = decrypt(serializedToken, encrypted_message) # The decrypted message
+# print("decrypted_message:") # Print the output
+# print(decrypted_message) # Print the output
