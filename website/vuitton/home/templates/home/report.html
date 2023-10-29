@@ -1,0 +1,67 @@
+{% extends 'home/layout.html' %}
+{% load static %}
+
+{% block content %}
+<section class="videobg" style="height: 150vh;" id="video1">
+    <img src="{% static 'home/assets/Hero Pages/i2.webp' %}" alt="Background Image" class="video">
+    <div class="white-overlay" style="height: 125%;">
+        <h2 style="top: 5%; left: 50%; color: black;">REPORT COUNTERFEIT</h2>
+        <form method="post" action="{% url 'home:thank_you' %}">
+            {% csrf_token %}
+            <div class="form-group" style="color: black;">
+                <!-- Contact Information -->
+                <label for="name" style="top: 11%; left: 20%;">Name:</label>
+                <input style="top: 12%; left: 60%;" type="text" id="name" name="name" required>
+
+                <label for="email" style="top: 18%; left: 20%;">Email:</label>
+                <input style="top: 19%; left: 60%;" type="email" id="email" name="email" required>
+
+                <label for="phone" style="top: 25%; left: 20%;">Phone:</label>
+                <input style="top: 26%; left: 60%;" type="tel" id="phone" name="phone">
+
+                <!-- Product Details -->
+                <label for="product_name" style="top: 32%; left: 17%;">Product:  </label>
+                <input style="top: 33%; left: 60%;" type="text" id="product_name" name="product_name" required>
+
+                <p style="position: absolute; top: 35%; left: 0%;"> Here you should explain why you believe the product is fraudulent and provide details of the suspicious seller or website</p>
+
+                <label for="description" style="top: 44%; left: 10%;">Description:</label>
+                <textarea style="top: 43%; left: 35%;" id="description" name="description" required></textarea>
+
+                <!-- Purchase Information -->
+                <label for="purchase_date" style="top: 51%; left: 10%;">Date of Purchase:</label>
+                <input style="top: 52%; left: 65%;" type="date" id="purchase_date" name="purchase_date" required>
+<!-- 
+                <label for="purchase_date" style="top: 56%; left: 10%;">Date of Purchase:</label>
+                <input style="top: 47%; left: 65%;" type="date" id="purchase_date" name="purchase_date" required> -->
+
+                <!-- <label for="purchase_location" style="top: 53%; left: 20%;">Purchase Location:</label>
+                <input style="top: 52%; left: 60%;" type="text" id="purchase_location" name="purchase_location" required> -->
+
+                <!-- <label for="receipt_number" style="top: 67%; left: 20%;">Receipt or Order Number:</label>
+                <input style="top: 68%; left: 60%;" type="text" id="receipt_number" name="receipt_number" required>
+
+                Suspected Fraud Indicators
+                <label for="fraud_description" style="top: 74%; left: 20%;">Why do you believe the product is fraudulent?</label>
+                <textarea style="top: 75%; left: 60%;" id="fraud_description" name="fraud_description" required></textarea>
+
+                <label for="packaging" style="top: 81%; left: 20%;">Describe any unusual packaging or labeling:</label>
+                <textarea style="top: 82%; left: 60%;" id="packaging" name="packaging"></textarea>
+
+                <label for="differences" style="top: 88%; left: 20%;">Describe any differences between the received product and what was advertised:</label>
+                <textarea style="top: 89%; left: 60%;" id="differences" name="differences"></textarea>
+
+                <label for="seller_details" style="top: 95%; left: 20%;">Provide details of the suspicious seller or website:</label>
+                <textarea style="top: 96%; left: 60%;" id="seller_details" name="seller_details"></textarea>
+
+                Additional Information
+                <label for="evidence" style="top: 102%; left: 20%;">Attach relevant photos or documents (optional):</label>
+                <input style="top: 103%; left: 60%;" type="file" id="evidence" name="evidence" accept="image/*, application/pdf"> -->
+
+                <!-- Submission Button -->
+                <button type="submit" style="top: 60%; left: 50%;">Submit</button>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}

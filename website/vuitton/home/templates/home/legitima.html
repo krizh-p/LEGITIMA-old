@@ -9,7 +9,7 @@
         <form method="post" action="{% url 'home:process_token' %}">
             {% csrf_token %}
             <div class="form-group">
-                <input style="top: 50%; left: 50%" autocomplete="off" type="text" name="token" placeholder="Enter your seralized token" required>
+                <input autocomplete="off" type="text" name="token" placeholder="Enter your seralized token" required>
                 <button type="submit" style="top: 75%; left: 50%">Submit</button>
             </div>
         </form>

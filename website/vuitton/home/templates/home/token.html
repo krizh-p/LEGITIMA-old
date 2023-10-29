@@ -1,0 +1,23 @@
+{% extends 'home/layout.html' %}
+{% load static %}
+
+{% block content %}
+
+    <!-- Token Information -->
+    <section class="videobg" id="video1">
+        <img src="{% static 'home/assets/Hero Pages/i1.jpg' %}" alt="Background Image" class="video">
+        <div class="white-overlay" style="height: 65%;">
+            <h2 style="top: 10%; left: 50%; color: black;" >TOKEN VERIFIED</h2>
+            <div class="product-info">
+                <p>Manufactured Date: January 10, 2023</p>
+                <p>Sold to Retailer Date: January 15, 2023</p>
+                <p>Count Manufactured: 24 of 213</p>
+                <p>Product Name: Example Product</p>
+                <!-- <p>Serial Number: b323a95762617312ee59ce8f2e9b35757160881e</p> -->
+                <p>Category: Luxury Handbag</p>
+                <p>Price: $999.99</p>
+            </div>
+        </div>
+    </section>
+    
+{% endblock %}

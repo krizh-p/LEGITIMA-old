@@ -1,0 +1,20 @@
+{% extends 'home/layout.html' %}
+{% load static %}
+
+{% block content %}
+
+    <!-- Token Information -->
+    <section class="videobg" id="video1">
+        <img src="{% static 'home/assets/Hero Pages/i1.jpg' %}" alt="Background Image" class="video">
+        <div class="white-overlay" style="width:40%; height: 40%;">
+            <h2 style="top: 10%; left: 50%; color: red;">INVALID TOKEN</h2>
+            <div class="product-info">
+                <p>This token was not issued by LOUIS VUITTON®.</p>
+                <p>Please ensure you entered the correct token.</p>
+                <p>If you believe the product you purchased might be of fraudulent nature, <a
+                        href="{% url 'home:report' %}">click here to report</a>.</p>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

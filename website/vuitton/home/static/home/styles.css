@@ -112,7 +112,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 125vh;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -125,7 +125,7 @@ section {
 
 .videobg h2 {
   position: absolute;
-  top: 81.2%;
+  top: 66.2%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
@@ -138,7 +138,7 @@ section {
 
 .videobg button {
   position: absolute;
-  top: 91%;
+  top: 81%;
   left: 50%;
 
   transform: translate(-50%, -50%);
@@ -164,10 +164,28 @@ section {
 
 .videobg input {
   position: absolute;
-  top: 40%;
+  top: 52%;
   left: 50%;
 
   transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+
+  padding: 15px 40px;
+  font-size: 15px;
+  font-weight: 100;
+  background-color: rgba(251, 2, 2, 0.3);
+  backdrop-filter: blur(45px);
+  border: 1px solid white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.videobg textarea {
+  position: absolute;
+  top: 52%;
+  left: 50%;
   z-index: 1;
   color: white;
 
@@ -188,7 +206,7 @@ section {
   left: 30%;
   width: 35%;
   height: 35%;
-  background-color: rgba(255, 255, 255, 0.7); /* Adjust the opacity as needed */
+  background-color: aliceblue; /* Adjust the opacity as needed */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -196,6 +214,17 @@ section {
   text-align: center;
   z-index: 0;
   opacity: 90%;
+}
+
+.videobg label {
+  position: absolute;
+}
+
+
+.white-overlay .product-info {
+  position: absolute;
+  color: black;
+  top: 23%;
 }
 
 .imagebg {
