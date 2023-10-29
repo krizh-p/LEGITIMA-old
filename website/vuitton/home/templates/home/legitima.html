@@ -1,0 +1,18 @@
+{% extends 'home/layout.html' %}
+{% load static %}
+
+{% block content %}
+<section class="videobg" id="video1">
+    <img src="{% static 'home/assets/Hero Pages/i2.webp' %}" alt="Background Image" class="video">
+    <div class="white-overlay" style="background-color: aliceblue; z-index: 0;">
+        <h2 style="top: 15%; left: 50%; color: black;" >AUTHENTICATE LEGITIMACY</h2>
+        <form method="post" action="{% url 'home:process_token' %}">
+            {% csrf_token %}
+            <div class="form-group">
+                <input style="top: 50%; left: 50%" autocomplete="off" type="text" name="token" placeholder="Enter your seralized token" required>
+                <button type="submit" style="top: 75%; left: 50%">Submit</button>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}

@@ -27,11 +27,11 @@
             <li><i class="fa-solid fa-magnifying-glass" id="search_icon"></i></li>
             <li><a href="#" class="nav-hid">Search</a></li>
         </ul>
-        <a href="#" class="brand">Louis Vuitton</a>
+        <a href="{% url 'home:index' %}" class="brand">Louis Vuitton</a>
         <ul>
-            <li><a href="#">Wishlist</a></li>
-            <li><a href="#">My LV</a></li>
-            <li><a href="#">LEGITIMA</a></li>
+            <li><a href="{% url 'home:index' %}">Wishlist</a></li>
+            <li><a href="{% url 'home:index' %}">My LV</a></li>
+            <li><a href="{% url 'home:legitima' %}">LEGITIMA</a></li>
         </ul>
     </nav>
 
