@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .popup-container {
+      width: 250px;
+      height: 250px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 5px 5px 15px #888888;
+      padding: 20px;
+    }
+    .message {
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 18px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="popup-container">
+    <img src="icon.png" alt="Extension Icon" width="64" height="64">
+    <h2>Legitima</h2>
+    <div class="message" id="authentic" style="display:none; background-color: #4CAF50;">
+      This page is <b>Authentic</b>.
+    </div>
+    <div class="message" id="spoofed" style="display:none; background-color: red;">
+      This page is <b>likely spoofed and unsafe</b>.
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
